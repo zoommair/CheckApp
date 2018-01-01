@@ -1,0 +1,459 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: powderblue;
+  font-family: 'Century Gothic', AppleGothic, sans-serif;
+  overflow-x: hidden;
+}
+
+.main {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  text-align: center;
+  min-width: 200px;
+  max-width: 500px;
+}
+
+.main h1 {
+  position: relative;
+  top: -10px;
+  font-size: 100%;
+  text-transform: uppercase;
+
+}
+
+.details {
+  text-align: left;
+  font-weight: 600;
+  padding-bottom: 10px;
+}
+
+.details ul {
+  margin-top: -10px;
+
+}
+
+.options {
+  width: 300px;
+}
+
+a {
+  text-decoration: none;
+
+}
+
+#welcome {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  margin: auto;
+  width: 50%;
+  max-width: 200px;
+  transform: translate(-50%, -30%)
+}
+
+.btn-long {
+  background-color: lightsteelblue;
+  border-radius: 20px;
+  padding: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: blue;
+  text-align: center;
+}
+
+.btn-square {
+  position: absolute;
+  bottom: 0;
+  background-color: royalblue;
+  padding-top: 15px;
+  padding-bottom: 10px;
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.btn-input {
+  background-color: whitesmoke;
+  border-radius: 20px;
+  padding: 5px;
+  font-size: 10px;
+  color: black;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+.btn-option {
+  display: inline-block;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 120px;
+  height: 120px;
+  margin: 5px;
+  box-shadow: 1px 1px 10px grey;
+  font-size: 80%;
+}
+
+.btn-option img {
+  width: 60px;
+  margin: auto;
+  margin-top: 20%;
+  padding-bottom: 3px;
+  display: block;
+
+}
+
+.btn-circle {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  background-color: mediumblue;
+  border-radius: 50%;
+  margin: 5px;
+  box-shadow: 1px 1px 10px black;
+}
+
+#accept {
+  background: url(phone-receiver.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: green;
+}
+
+#rejectwmess {
+  background: url(message.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: yellow;
+}
+
+#reject {
+  background: url(phone-hang-up.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: red;
+}
+
+#mute {
+  background: url(muted.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: blue;
+}
+
+#bluetooth {
+  background: url(headphones.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: blue;
+}
+
+#sos {
+  background: url(sos.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: blue;
+}
+
+
+.icon {
+  width: 50px;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.5));
+
+}
+
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+}
+
+.garage {
+  background: url(cartop.png) 50% 50% no-repeat;
+  background-size: cover;
+  min-width: 200px;
+  min-height: 400px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.7));
+  -webkit-filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.7));
+}
+
+.call {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  background: url(officer.jpg) 50% 0% no-repeat;
+  background-size: cover;
+}
+
+.callbox {
+  float: right;
+  margin-right: 20px;
+  margin-top: 20px;
+  background-color: white;
+  width: 100px;
+  height: 150px;
+  background: url(face.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  box-shadow: 1px 1px 10px black;
+}
+
+.panel {
+  position: absolute;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  bottom: 20px;
+  text-align: center;
+  min-width: 300px;
+
+}
+
+#endcall {
+  display: block;
+  margin: auto;
+  background: url(phone-hang-up.png) 50% 50% no-repeat;
+  background-size: 40px;
+  background-color: red;
+}
+
+.ticket {
+  border: dotted 2px black;
+  width: 250px;
+  height: 300px;
+  background-color: snow;
+}
+
+.formdiv {
+  display: inline-block;
+  margin: 5px;
+}
+
+.formdiv input {
+  vertical-align: middle;
+}
+
+.formdiv img {
+  width: 20px;
+}
+
+#incoming {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: snow;
+  display: none; //toggle between block and none
+}
+
+#incoming img {
+  margin: auto;
+  text-align: center;
+  display: block;
+  height: 180px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: 3px 3px 10px black;
+}
+
+#mainBlur {
+  filter: none; //toggle between none and blur (5px)
+}
+
+.police {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 768px;
+  height: 100%;
+  text-align: center;
+}
+
+.policecallbox {
+  width: 100%;
+  height: 45%;
+}
+
+.copbox {
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: grey;
+  width: 50%;
+  height: 100%;
+  background: url(officer.jpg) 50% 0% no-repeat;
+  background-size: cover;
+}
+
+.perpbox {
+  position: relative;
+  vertical-align: top;
+  margin: 0;
+  padding: 0;
+  display: inline-block;
+  background-color: grey;
+  width: 50%;
+  height: 100%;
+  background: url(face-tel.jpeg) 50% 0% no-repeat;
+  background-size: cover;
+}
+
+.infosection {
+  overflow-x: scroll;
+  height: 45%;
+}
+
+.docs {
+  padding-left: 5px;
+  text-align: left;
+  float: left;
+  width: 900px;
+}
+
+.docs img {
+  vertical-align: top;
+  display: inline-block;
+  width: 250px;
+  height: 150px;
+  background-color: grey;
+}
+
+.prior {
+  display: inline-block;
+  font-size: 70%;
+}
+
+#copend {
+  background: url(phone-hang-up.png) 50% 50% no-repeat;
+  background-size: 40px;
+  position: absolute;
+  bottom: 0;
+  background-color: red;
+}
+
+#menubutton {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 40px;
+  height: 40px;
+  z-index: 1000;
+}
+
+#menubutton img {
+  width: 30px;
+}
+
+#menu {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(65, 105, 225, 0.5);
+  display: none; //toggle between none and block
+}
+
+#menupanel {
+  width: 60%;
+  height: 100%;
+  background-color: royalblue;
+  box-shadow: 1px 1px 5px black;
+  overflow: hidden;
+}
+
+#menuinner {
+  position: relative;
+  margin: 0 auto;
+  top: 50px;
+  left: 50px;
+}
+
+#menupanel img {
+  width: 100px;
+}
+
+
+#menuinner ul {
+  margin: 0;
+  padding: 0;
+  width: 80%;
+}
+
+#menuinner li {
+  color: snow;
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#ticketpopup {
+  height: 50%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: steelblue;
+  display: none;
+}
+
+#ticketpopup p {
+  margin-left: 10%;
+}
+
+#ticketpopup form {
+  margin-left: 15%;
+}
+
+#info-tab {
+  width: 100%;
+}
+
+#submitform {
+  width: 100%;
+  font-weight: 700;
+}
+
+#citationinput {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  margin: auto;
+  width: 80%;
+  min-width: 300px;
+  background-color: steelblue;
+  position: relative;
+  bottom: 300px;
+  padding: 10px;
+  display: none;
+}
+
+#citationinput p {
+  text-align: left;
+}
+
+#citationconfirm {
+  border-width: 3px;
+  border-color: black;
+  border-style: solid;
+  margin: auto;
+  width: 80%;
+  min-width: 300px;
+  background-color: steelblue;
+  position: relative;
+  bottom: 300px;
+  padding: 10px;
+  display: none;
+}
+
+#citecount {
+  display: none;
+  background-color: red;
+  margin-left: 3px;
+  width: 17px;
+  height: 17px;
+  text-align: center;
+  border-radius: 50%;
+}
